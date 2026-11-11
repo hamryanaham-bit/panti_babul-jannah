@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #1b5e20;
+  --primary-light: #2e7d32;
+  --bg-light: #e8f5e9;
+  --card-bg: #ffffff;
+  --text-dark: #2c3e50;
+  --border-radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light) !important;
+  color: var(--text-dark);
+}
+
+/* Header Navigasi Hijau Panti */
+header {
+  background-color: var(--primary-color) !important;
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.brand h1 {
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+nav a {
+  color: white !important;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Layout Container Utama */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 25px auto;
+}
+
+.page-header {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.page-header img {
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.page-header-text h2 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.content-box {
+  background: white !important;
+  border-radius: var(--border-radius);
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.section-tag {
+  background-color: var(--primary-light);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+/* Grid Kartu Kegiatan & Galeri (3 Kolom Berjejer Rapi) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* Pembatasan Ukuran Foto Supaya Tidak Melebar Se-Layar */
+.card img {
+  width: 100%;
+  height: 180px !important;
+  object-fit: cover !important;
+  display: block;
+}
+
+.card p {
+  margin-top: 12px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+footer {
+  background-color: var(--primary-color) !important;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.85rem;
+  margin-top: 40px;
+}
